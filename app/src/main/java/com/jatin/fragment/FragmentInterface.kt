@@ -2,7 +2,7 @@ package com.jatin.fragment
 
 interface FragmentInterface {
 
-    fun changeFragmentText()
+    fun changeFragmentText(string: String)
     fun increment()
     fun decrement()
 }

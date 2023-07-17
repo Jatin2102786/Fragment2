@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.jatin.fragment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     lateinit var fragmentInterface: FragmentInterface//initializing interface
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             }
             else
             {
-                fragmentInterface.changeFragmentText()
+                fragmentInterface.changeFragmentText(binding.etName.text.toString())
 
             }
         }

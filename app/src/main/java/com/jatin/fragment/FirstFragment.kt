@@ -76,8 +76,8 @@ class FirstFragment : Fragment(), com.jatin.fragment.FragmentInterface {
     }
 
 
-    override fun changeFragmentText() {
-        fragmentActivity.binding.etName.text.toString().also { tvSetText.text = it }
+    override fun changeFragmentText(string: String) {
+         tvSetText.text = string
     }
 
     override fun decrement() {
